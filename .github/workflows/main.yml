@@ -1,0 +1,24 @@
+name: Testes em C
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Baixar código
+      uses: actions/checkout@v4
+
+    - name: Instalar build-essential
+      run: sudo apt-get update && sudo apt-get install -y build-essential
+
+    - name: Compilar
+      run: gcc -Isrc src/*.c tests/*.c -o bin/tests
+
+    - name: Rodar testes
+      run: ./bin/tests
