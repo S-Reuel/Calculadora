@@ -1,4 +1,4 @@
-# testes-unitarios
+# Calculadora
 Repositório para aprendizado e prática de testes unitários
 
 ```
