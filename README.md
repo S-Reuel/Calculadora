@@ -2,7 +2,7 @@
 Repositório para aprendizado e prática de testes unitários
 
 ```
-testes-unitarios
+Calculadora
 ├── .github
 │    ├── workflows
 │    └── c-testes.yml
