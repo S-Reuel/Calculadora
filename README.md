@@ -1,5 +1,6 @@
 # Calculadora
-Repositório para aprendizado e prática de testes unitários
+
+Consiste em uma calculadora simples, desenvolvida em C. <br>Foco no aprendizado e prática de criação e correção de testes unitários.
 
 ```
 Calculadora
@@ -10,10 +11,13 @@ Calculadora
 │    └──tests
 ├── src
 │    ├── soma.c
-│    └── soma.h
+│    ├── soma.h
+│    ├── subtracao.c
+│    └── subtracao.h
 ├── tests
 │    ├── main_tests.c
 │    ├── test_soma.c
-│    └── test_soma.h
-└── Makefile
+│    ├── test_soma.h
+│    ├── test_subtracao.c
+│    └── test_subtracao.h
 ```
