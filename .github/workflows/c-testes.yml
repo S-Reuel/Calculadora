@@ -18,7 +18,7 @@ jobs:
       run: sudo apt-get update && sudo apt-get install -y build-essential
 
     - name: Compilar
-      run: gcc $(ls src/*.c | grep -v main.c) tests/*.c -o tests
+      run: gcc -Isrc $(find src -name "*.c" ! -name "main.c") tests/*.c -o bin/tests/tests_exec
 
     - name: Rodar testes
       run: ./bin/tests/tests_exec
