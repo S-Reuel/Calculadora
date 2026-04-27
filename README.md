@@ -15,6 +15,8 @@ Calculadora
 │    ├── divisao.h
 │    ├── multiplicacao.c
 │    ├── multiplicacao.h
+│    ├── plataforma.c
+│    ├── plataforma.h
 │    ├── soma.c
 │    ├── soma.h
 │    ├── subtracao.c
