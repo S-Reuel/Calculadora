@@ -1,14 +1,16 @@
 #include<stdio.h>
-#include<windows.h>
+#include"plataforma.h"
 #include"soma.h"
 #include"subtracao.h"
 #include"multiplicacao.h"
 #include"divisao.h"
 
 int main(){
-    SetConsoleOutputCP(65001);
     char opcao;
     float num1, num2;
+    
+    configConsole();
+
     printf("\t\t########Calculadora########");
     printf("\n\nPara realizar qualquer cálculo basta escrever a expressão, exemplo: 2+1");
     printf("\n\nOpções disponíveis:\n (+) Soma\n (-) Subtração\n (*) Multiplicação\n (/) Divisão");
@@ -40,12 +42,11 @@ int main(){
             printf("Operação inválida!");
             break;
         }
-        fflush(stdin);
         printf("\nRealizar novo Cálculo? S/N\n>> ");
-        scanf("%c", &opcao);
+        scanf(" %c", &opcao);
+        getchar();
     } while (opcao=='S' || opcao=='s');
     printf("Pressione qualquer tecla para fechar");
-    getchar();
     getchar();
     return 0;
 }
