@@ -5,8 +5,8 @@ Consiste em uma calculadora simples, desenvolvida em C. <br>Foco no aprendizado 
 ```
 Calculadora
 ├── .github
-│    ├── workflows
-│    └── c-testes.yml
+│    └──workflows
+│        └── c-testes.yml
 ├── bin
 │    └──tests
 ├── src
@@ -31,4 +31,6 @@ Calculadora
 │    ├── test_soma.h
 │    ├── test_subtracao.c
 │    └── test_subtracao.h
+├── .gitignore
+└── README.md
 ```
