@@ -2,7 +2,7 @@
 #include<stdlib.h>
 #include"../src/divisao.h"
 #define ASSERT_EQ(expected, actual)\
-    if((expected)!=(actual)){\        
+    if((expected)!=(actual)){\
         printf("Falhou");\
         exit(1);\
     }else{\
