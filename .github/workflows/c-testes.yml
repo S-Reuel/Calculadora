@@ -3,8 +3,14 @@ name: Testes em C
 on:
   push:
     branches: [ "development" ]
+    paths:
+      - 'src/**'
+      - 'tests/**'
   pull_request:
     branches: [ "development" ]
+    paths:
+      - 'src/**'
+      - 'tests/**'
 
 jobs:
   build-and-test:
