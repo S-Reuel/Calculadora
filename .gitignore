@@ -1,3 +1,4 @@
 # ignora a pasta de configuração do VSCode
 .vscode
 main.exe
+bin/calculadora
