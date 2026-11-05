@@ -1,13 +1,5 @@
-#include<stdio.h>
-#include<stdlib.h>
 #include"../src/divisao.h"
-#define ASSERT_EQ(expected, actual)\
-    if((expected)!=(actual)){\
-        printf("Falhou");\
-        exit(1);\
-    }else{\
-        printf("Funcionou");\
-    }
+#include"tests_utils.h"
 
 void test_divisao(){
     ASSERT_EQ(0, divisao(0, 2));

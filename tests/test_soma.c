@@ -1,14 +1,5 @@
-#include<stdio.h>
-#include<stdlib.h>
 #include"../src/soma.h"
-
-#define ASSERT_EQ(expected, actual)\
-    if ((expected) != (actual)){\
-        printf("Falhou");\
-        exit(1);\
-    } else{\
-        printf("Funcionou");\
-    }
+#include"tests_utils.h"
 
 void test_soma(){
     ASSERT_EQ(5.0, soma(2.0, 3.0));
