@@ -3,7 +3,7 @@
 
 #define ASSERT_EQ(expected, actual)\
     if((expected) != (actual)){\
-        printf("Falhou: Esperava: %f Resultado: %f\n");\
+        printf("Falhou: Esperava: %f Resultado: %f\n", expected, actual);\
         exit(1);\
     }else{\
         printf("Funcionou\n");\
