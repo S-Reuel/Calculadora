@@ -2,4 +2,3 @@
 .vscode
 main.exe
 bin/calculadora
-bin/tests/tests_exec
